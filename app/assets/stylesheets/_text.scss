@@ -5,7 +5,7 @@
 .main {
   padding: 150px 100px 100px 100px;
   height: 100vh;
-  background-color: #cd853f;
+  background-color: #EEEEEE;
   display: flex;
   justify-content: space-between;
   overflow: scroll;
@@ -15,10 +15,14 @@
     font-size: 17px;
     padding-bottom: 80px;
     margin-right: 80px;
+    p {
+      padding-top: 13px;
+    }
     &__text {
       font-weight: bold;
       font-family: 'Noto Serif JP';
       font-size: 20px;
+      width: 560px;
       margin-bottom: 80px;
       margin-right: 88px;
       border-top: double 5px #222D3A;

@@ -1,4 +1,7 @@
 <div class="posts">
+  <p class="posts__title">
+    投稿一覧
+  </p>
   <% @posts.each do |post| %>
     <div class="posts__content">
       <div class="posts__content__left">
@@ -6,11 +9,11 @@
       </div>
       <div class="posts__content__right">
         <div class="posts__content__right__top">
-          <%= post.title %>
+          <%= post.user.nickname %>
         </div>
         <div class="posts__content__right__bottom">
           <div class="content__right__bottom--userName">
-            <%= post.user.nickname %>
+            <%= post.title %>
           </div>
           <div class="posts__content__right__bottom--date">
             <%= post.youtube_url %>
