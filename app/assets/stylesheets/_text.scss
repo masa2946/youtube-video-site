@@ -15,8 +15,12 @@
     font-size: 17px;
     padding-bottom: 80px;
     margin-right: 80px;
+    iframe {
+      padding-bottom: 40px;
+      border-bottom: solid 2px gray;
+    }
     p {
-      padding-top: 13px;
+      padding-top: 10px;
     }
     &__text {
       font-weight: bold;
