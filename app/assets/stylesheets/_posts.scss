@@ -77,7 +77,7 @@
 .content-main {
   padding-top: 150px;
   height: 100vh;
-  background-color: #cd853f;
+  background-color: #EEEEEE;
   align-items: center;
   padding-left: 330px;
 }
@@ -86,24 +86,30 @@
   padding: 150px 100px 100px 150px;
   height: 100vh;
   overflow: scroll;
-  background-color: #cd853f;
+  background-color: #EEEEEE;
+  &__title {
+    font-weight: bold;
+    font-family: 'Noto Serif JP';
+    border-bottom: double 10px #222D3A;
+    font-size: 20px;
+  }
   &__content {
-    border-top: double 5px #222D3A;
+    border-bottom: solid 3px #222D3A;
     padding-bottom: 30px;
     &__right {
       &__top {
         font-weight: bold;
         font-family: 'Noto Serif JP';
         font-size: 20px;
-        padding-bottom: 15px;
-        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
       }
     }
   }
 }
 
 .content__right__bottom--userName {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .new_post {
   height: 500px;
@@ -112,4 +118,10 @@
 
 .new_user {
   margin-top: 100px;
+}
+
+.content__title {
+  font-weight: bold;
+  font-family: 'Noto Serif JP';
+  font-size: 20px;
 }

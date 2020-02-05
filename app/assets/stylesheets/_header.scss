@@ -63,6 +63,9 @@
           font-family: fantasy;
           text-decoration: none;
           color: gold;
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
           &:hover {
             color: white;
           }
