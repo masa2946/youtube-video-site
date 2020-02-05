@@ -54,3 +54,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'google-api-client', '0.9.20', require: 'google/apis/youtube_v3'
 gem 'devise'
 gem 'dotenv'
+gem 'kaminari'
