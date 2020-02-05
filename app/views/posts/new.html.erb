@@ -1,0 +1,18 @@
+<div class="content-main">
+  <div class="content__title">
+    新規投稿
+  </div>
+
+  <%= form_for @post do |form| %>
+    <%= form.text_field :title, placeholder: :タイトル, class: :form__title %>
+    <%= form.text_area :youtube_url, placeholder: :テキスト, class: :form__text %>
+    <%= form.submit '投稿する', class: :form__btn %>
+  <% end %>
+</div>
+
+<div class="footer">
+  <p class="footer__text">
+  by.Y
+  </p>
+</div>
+

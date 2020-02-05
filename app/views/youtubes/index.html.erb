@@ -1,0 +1,37 @@
+<div class="main">
+  <div class="main__youtube">
+    <p class="main__youtube__text">
+      Youtubeの動画を中心に最新の話題動画を集めたキュレーションメディアです。<br>ログインしていただければ、投稿一覧にてユーザー同士でオススメ動画の情報など共有することができます。
+    </p>
+    <% @youtube_data.items.each do |item| %>
+      <% snippet = item.snippet %>
+      <p><%= snippet.title %></p>
+      <p><%= snippet.channel_title %></p>
+      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/<%= item.id.video_id %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <% end %>
+  </div>
+  <div class="main__image">
+    <p class="main__image__attention">
+      注目動画
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wt1QA_Uhyao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="main__image__title">
+      Pick up 記事
+    </p>
+    <div class="main__image__box">
+      <a class="main__image__box__link" href="https://www.yomiuri.co.jp/editorial/20200201-OYT1T50267/"target="_blank">桜を見る会　公文書の管理がずさん過ぎる</a>
+    </div>
+    <div class="main__image__box">
+      <a class="main__image__box__link" href="https://www3.nhk.or.jp/news/html/20200202/k10012269291000.html"target="_blank">中国新型肺炎　状況</a>
+    </div>
+    <div class="main__image__box">
+      <a class="main__image__box__link" href="https://r25.jp/article/717625855190518371"target="_blank">不倫の東出昌大が恐れる、杏による“第2・第3の暴露”</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p class="footer__text">
+  by.Y
+  </p>
+</div>

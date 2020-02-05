@@ -1,0 +1,13 @@
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: #222D3A;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  &__text {
+    font-family: fantasy;
+    font-size: 25px;
+    line-height: 80px;
+  }
+}

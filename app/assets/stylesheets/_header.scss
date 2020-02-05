@@ -1,0 +1,155 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #222D3A;
+  position: fixed;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  
+  &__box {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      padding-left: 50px;
+      margin-left: 50px;
+      &__name {
+        padding-left: 70px;
+      }
+    }
+    &__text {
+      font-family: fantasy;
+      font-size: 40px;
+      font-weight: bold;
+      padding-left: 100px;
+      animation-name: fade-in2;
+      animation-duration: 2s; 
+      animation-timing-function: ease-out; 
+      animation-delay: 1s; 
+      animation-iteration-count: 1; 
+      animation-direction: normal; 
+      animation-fill-mode: forwards; 
+    }
+  
+    @keyframes fade-in2 {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    &__sub {
+      font-family: 'Noto Serif JP';
+      font-size: 13px;
+      font-weight: bold;
+      padding-top: 20px;
+      
+    }
+    &__title {
+      padding-right: 80px;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15px;
+      &__home {
+        margin-right: 10px;
+        &__link {
+          margin-right: 10px;
+          font-family: fantasy;
+          text-decoration: none;
+          color: gold;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      &__business {
+        &__link {
+        margin-left: 10px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__news {
+        &__link {
+        margin-left: 25px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__share {
+        &__link {
+        margin-left: 25px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        font-size: 15px;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__list {
+        &__link {
+        margin-left: 25px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        font-size: 15px;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__login {
+        &__right--btn {
+        margin-left: 50px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        font-size: 15px;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__new {
+        &__right--btn {
+        margin-left: 30px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        font-size: 15px;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+      &__logout {
+        &__right--btn {
+        margin-left: 25px;
+        font-family: fantasy;
+        text-decoration: none;
+        color: gold;
+        font-size: 15px;
+        &:hover {
+          color: white;
+        }
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,27 @@
+<div class="posts">
+  <% @posts.each do |post| %>
+    <div class="posts__content">
+      <div class="posts__content__left">
+        <div class="posts__content__left--image"></div>
+      </div>
+      <div class="posts__content__right">
+        <div class="posts__content__right__top">
+          <%= post.title %>
+        </div>
+        <div class="posts__content__right__bottom">
+          <div class="content__right__bottom--userName">
+            <%= post.user.nickname %>
+          </div>
+          <div class="posts__content__right__bottom--date">
+            <%= post.youtube_url %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="footer">
+  <p class="footer__text">
+  by.Y
+  </p>
+</div>

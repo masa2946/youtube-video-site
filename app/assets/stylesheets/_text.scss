@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 150px 100px 100px 100px;
+  height: 100vh;
+  background-color: #cd853f;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  &__youtube {
+    font-weight: bold;
+    font-family: 'Noto Serif JP';
+    font-size: 17px;
+    padding-bottom: 80px;
+    margin-right: 80px;
+    &__text {
+      font-weight: bold;
+      font-family: 'Noto Serif JP';
+      font-size: 20px;
+      margin-bottom: 80px;
+      margin-right: 88px;
+      border-top: double 5px #222D3A;
+      border-bottom: double 5px #222D3A;
+      padding: 0.5em 0;
+      animation-name: fade-in2;
+      animation-duration: 2s; 
+      animation-timing-function: ease-out; 
+      animation-delay: 1s; 
+      animation-iteration-count: 1; 
+      animation-direction: normal; 
+      animation-fill-mode: forwards; 
+    }
+  
+    @keyframes fade-in2 {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  &__image {
+    &__attention {
+      font-size: 20px;
+      font-family: 'Noto Serif JP';
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 20px;
+      font-family: 'Noto Serif JP';
+      font-weight: bold;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+    &__box {
+      padding-bottom: 20px;
+      &__link {
+        margin-left: 10px;
+        font-family: 'Noto Serif JP';
+        color: black;
+        &:hover {
+          color: white;
+        }
+      }
+    }  
+  }
+}

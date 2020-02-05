@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YoutubeHensyuuyou</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header__box">
+        <p class="header__box__text">
+          by.Y
+        </p>
+        <p class="header__box__sub">
+          動画キュレーションメディア
+        </p>
+        <div class="header__box__title">
+          <p class="header__box__title__home">
+            <%= link_to "Home", root_path, class: "header__box__title__home__link" %>
+          </p>
+          <p class="header__box__title__business">
+            <%= link_to "Business", youtubes_new_path, class: "header__box__title__business__link" %>
+          </p>
+          <p class="header__box__title__news">
+            <%= link_to "News", youtubes_show_path, class: "header__box__title__news__link" %>
+          </p>
+          <p class="header__box__title__list">
+            <%= link_to "投稿一覧", posts_index_path, class: "header__box__title__list__link" %>
+          </p>
+          <% if user_signed_in? %>
+            <p class="header__box__title__name">
+              <%= current_user.nickname %>
+            </p>
+            <p class="header__box__title__share">
+              <%= link_to "新規投稿", new_post_path, class: "header__box__title__share__link" %>
+            </p>
+            <p class="header__box__title__logout">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__box__title__logout__right--btn" %>
+            </p>
+          <% else %>
+            <p class="header__box__title__login">
+              <%= link_to "ログイン", new_user_session_path, class: "header__box__title__login__right--btn" %>
+            </p>
+            <p class="header__box__title__new">
+              <%= link_to "新規登録", new_user_registration_path, class: "header__box__title__new__right--btn" %>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
