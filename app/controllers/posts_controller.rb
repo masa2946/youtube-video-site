@@ -13,6 +13,10 @@ class PostsController < ApplicationController
     redirect_to posts_index_path
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
   private
   def post_params
     params.require(:post).permit(:title, :youtube_url).merge(user_id: current_user.id)
