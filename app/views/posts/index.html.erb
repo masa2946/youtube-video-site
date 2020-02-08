@@ -18,6 +18,9 @@
           <div class="posts__content__right__bottom--date">
             <%= post.youtube_url %>
           </div>
+          <div id="likes_buttons_<%= post.id %>">
+            <%= render partial: 'likes/like', locals: { post: post, likes: @likes} %>
+          </div>
         </div>
       </div>
     </div>

@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get "youtubes/new"
   get "youtubes/show"
   get "posts/index"
-  resources :posts, only: [:new, :create, :show]
+  resources :posts, only: [:new, :create, :show] do
+    resources :likes, only: [:create, :destroy]
+  end
 end
