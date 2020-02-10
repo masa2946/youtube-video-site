@@ -26,7 +26,19 @@ youtube-video-site
  
 ```
 $ git clone https://github.com/masa2946/youtube-video-site.git
-```
 
+```
+## YouTube Data APIの取得
+・下記のサイトを参考にAPIキーを取得してください。
+https://www.plusdesign.co.jp/blog/?p=7752
+
+・取得したAPIキーを下記のように貼り付けてください。変更箇所はyoutubes_controller.rbの上から２行目。
+```
+# before
+  GOOGLE_API_KEY = ENV["API_KEY"]
+
+# after
+  GOOGLE_API_KEY = "取得したAPIキー"
+```
 ## その他
  YouTube Data APIを使用しているため、１日の上限であるAPIデータを取得してしまった際、quotaExceededというエラーが出る場合があります。
