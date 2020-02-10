@@ -6,7 +6,6 @@ youtube-video-site
  
 ## 簡単な説明
  APIを利用し、YouTubeの動画を中心に集めた動画キュレーションメディアです。ユーザー機能、投稿機能も実装しています。
-***デモ***
  
 ![デモ](https://i.gyazo.com/ea94d950bf8381710d728517ca713a9b.jpg)
  
@@ -29,7 +28,7 @@ $ git clone https://github.com/masa2946/youtube-video-site.git
 
 ```
 ## YouTube Data APIの取得
-・下記のサイトを参考にAPIキーを取得してください。
+・右記のサイトを参考にAPIキーを取得してください。
 https://www.plusdesign.co.jp/blog/?p=7752
 
 ・取得したAPIキーを下記のように貼り付けてください。変更箇所はyoutubes_controller.rbの上から２行目。
