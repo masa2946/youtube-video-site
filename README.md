@@ -25,8 +25,8 @@ youtube-video-site
 ## インストール
  
 ```
-$ git clone https://github.com/masa2946/youtube-hensyuuyou.git
-$ cd youtube-hensyuuyou
+$ git clone https://github.com/masa2946/youtube-video-site.git
+$ cd youtube-video-site
 $ bundle install
 $ bundle exec rake db:create
 $ bundle exec rake db:migrate
