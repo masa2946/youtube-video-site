@@ -40,4 +40,4 @@ https://www.plusdesign.co.jp/blog/?p=7752
   GOOGLE_API_KEY = "取得したAPIキー"
 ```
 ## その他
- YouTube Data APIを使用しているため、１日の上限であるAPIデータを取得してしまった際、quotaExceededというエラーが出る場合があります。
+ YouTube Data APIを使用しているため、１日の上限である量のAPIデータを取得してしまった際、quotaExceededというエラーが出る場合があります。またこのエラーは１日でリセットされ解除されます。
